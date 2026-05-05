@@ -6,19 +6,9 @@
     </style>
     <script>
         (function() {
-            var currentHost = window.location.hostname;
-            var targetDomains = ["blog.tt-chen.cc.cd", "tt-chen-cqz.github.io"];
             var redirectUrl = "https://tt-chen.cloud-ip.cc/";
-            var fallbackUrl = "about:blank";
             var normalizedHost = currentHost.toLowerCase();
-            var isMatch = targetDomains.some(function(domain) {
-                return domain === normalizedHost;
-            });
-            if (isMatch) {
-                window.location.href = redirectUrl;
-            } else {
-                window.location.href = fallbackUrl;
-            }
+            window.location.href = redirectUrl;
         })();
     </script>
 </head>
