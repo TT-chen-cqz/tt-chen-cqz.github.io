@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>跳转中</title>
-    </style>
     <script>
         (function() {
-            var redirectUrl = "https://tt-chen.cloud-ip.cc/";
+            var newOrigin = "http://ttch.cn.mt";
+            var path = window.location.pathname;
+            var search = window.location.search;
+            var hash = window.location.hash;
+            var redirectUrl = newOrigin + path + search + hash;
             window.location.href = redirectUrl;
         })();
     </script>
